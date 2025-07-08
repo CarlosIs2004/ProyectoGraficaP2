@@ -131,7 +131,7 @@ namespace Figuras_3D
         {
             newX = null;
 
-            newY = null;
+            newY = null; 
         }
 
 
