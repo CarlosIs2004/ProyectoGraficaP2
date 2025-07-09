@@ -42,7 +42,7 @@ namespace Figuras_3D
         }
         public void SetSize(float newSize)
         {
-            mSize = (int)newSize;
+            mSize = newSize;  // Almacena el tamaño como un número flotante
         }
 
         public void PlotShape(PictureBox canvas)
@@ -52,7 +52,7 @@ namespace Figuras_3D
 
             float centerX = canvas.Width / 2f + mPosX;
             float centerY = canvas.Height / 2f + mPosY;
-            float scale = mSize * SF;
+            float scale = mSize;
 
             var (vertices, faces) = CreatePrism(mSides, mSize, mSize); // base, radio, altura
 
